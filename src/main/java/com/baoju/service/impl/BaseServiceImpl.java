@@ -6,12 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import tk.mybatis.mapper.common.Mapper;
 
+import com.baoju.dao.CountryMapper;
 import com.baoju.service.BaseService;
 
 public abstract class BaseServiceImpl<T> implements BaseService<T> {
 
     @Autowired
     protected Mapper<T> mapper;
+    
+    @Autowired
+    protected CountryMapper CountryMapper;
 
     public Mapper<T> getMapper() {
         return mapper;

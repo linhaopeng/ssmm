@@ -15,5 +15,10 @@ public class CountryServiceImpl extends BaseServiceImpl<Country> implements Coun
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public List<Country> getAllCountry() {
+		return CountryMapper.getAllCountry();
+	}
 }
   

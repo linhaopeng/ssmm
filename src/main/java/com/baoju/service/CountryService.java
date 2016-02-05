@@ -17,4 +17,5 @@ public interface CountryService extends BaseService<Country> {
     */
    List<Country> selectByCountry(Country country, int page, int rows);
 
+   List<Country> getAllCountry();
 }
